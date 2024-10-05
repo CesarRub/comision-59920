@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
+/* 
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.imagen_fondo{
+    background-image:url(../assets/img/fondo\ 10.jpg);
+    opacity: 0,1;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.imagen_logo img{
+    width: 230px;
+    height: 130px;
+    padding-left: 50px;
+}
+
+.navegacion{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.navegacion li a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navegacion li a:hover{
+  color: rgb(190, 3, 3);
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.infohome{
+    width: 500px;
+    color: white;
+    margin-left: 50px;
+}
+
+.infohome h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+
+.infohome p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.imagen_redbull img{
+    width: 500px;
+    height: 300px;
+    padding-right: 50px;
+}
+
+.linea_vertical{
+    border-left: 1px solid red;
+    height: 200px;
+}
+
+.redes_uno {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes_uno a{
+    margin-right: 50px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.linea_horizontal{
+    border-bottom: 1px solid red;
+    width: 300px;
+}
+.derechos_reservados{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/*--------------Inician estilos pagina Nosotros-------------------*/
+
+
+.banner_nosotros{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info_nosotros{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 200px;
+  
+}
+
+.info_nosotros h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding-bottom: 30px;
+  font-size: 50px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.info_nosotros p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color:white;
+  text-align: justify;
+}
+
+.redes_nosotros {
+  display: flex;
+  width: 20%;
+}
+
+.linea_vertical_nosotros{
+  border-left: 1px solid red;
+  height: 200px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.redes_nosotros a{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+
+/*--------------Inician estilos pagina escuderias y circuitos-------------------*/
+
+.global{
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat(2,1fr);
+}
+.botones_escuderias{
+  margin-bottom: 70px;
+}
+
+.botones_escuderias a img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 11px;
+}
+
+.escuderias_texto{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.escuderias_texto h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.escuderias_texto p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color:white;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.auto_pilotos{
+  align-items: center;
+}
+
+.auto img{
+  width: 500px;
+  height: 330px;
+}
+
+.pilotos{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.max{
+  align-items: center;
+}
+
+.sergio{
+  align-items: center;
+}
+
+.max img{
+  border: 1px solid white;
+  border-radius: 75px;
+}
+
+.sergio img{
+  border: 1px solid white;
+  border-radius: 75px;
+  align-items: center;
+}
+
+.titulo_pilotos h3{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pilotos p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color:white;
+}
+
+.pilotos img{
+  width: 150px;
+  height: 150px;
+}
+
+
+.circuitos h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.pistas{
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards{
+  width: 250px;
+  height: 320px;
+  background-color: rgba(92, 91, 91, 0.164);
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+
+}
+
+.pistas img{
+  width: 200px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.pistas h4{
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(211, 24, 24);
+  margin-bottom: 10px;
+}
+
+.pistas li{
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+  color: white;
+}
+
+
+/*--------------Inician estilos pagina noticias-------------------*/
+
+
+.global_noticias{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.titulo_noticias h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  margin-left: 50px;
+}
+
+
+.carousel-inner h5{
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.carousel-inner p{
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+
+/*--------------Inician estilos pagina Newsletter-------------------*/
+
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contenedor h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  margin-left: 50px;
+  width: 45%;
+}
+
+.formulario{
+  width: 45%;
+  background-color: rgba(73, 70, 70, 0.479);
+  border-radius: 50px;
+  height: 100%;
+}
+
+.celdas{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.celdas input{
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(85, 83, 83, 0.637);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(119, 119, 119, 0.733);
+}
+
+.btn-enviar input{
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(155, 20, 20);
+  border: 1px solid rgb(151, 149, 149);
+  color: white;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 20px;
+  display: block;
+  align-items: center;
+}
+
+.redesnews{
+  display: flex;
+  width: 10%;
+  align-items: center;
+}
+
+
+
+
+/*--------------Inician estilos MEDIA QUIERIS-------------------*/
+
+
+/*----MEDIA QUIERIS desktop-------*/
+
+
+/*----pagina index-------*/
+@media (max-width: 1024px){
+
+  header{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.imagen_logo img{
+  padding: 0;
+}
+
+/*----pagina newslette-------*/
+
+header{
+  margin-bottom: 20px;
+}
+.contenedor{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contenedor h1{
+  margin-bottom: 50px;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+.navegacion{
+  padding-right:0px;
+}
+
+.redesnews{
+  flex-direction: column;
+}
+
+.redesnews .linea_vertical{
+  display: none;
+}
+
+.redesnews .redes_uno{
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+footer{
+  margin-top: 20px;
+}
+
+}
+
+
+/*----MEDIA QUIERIS tablet-------*/
+
+@media (max-width: 768px){
+
+  .banner{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .linea_vertical{
+    height: 0px;
+  }
+
+  .redes_uno {
+    flex-direction: row;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    margin: auto;
+  }
+
+  footer{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  footer .linea_horizontal{
+    margin: auto;
+    }
+
+  .infohome{
+    margin: auto;
+  }
+
+  .infohome h1{
+    text-align: center;
+  }
+
+.infohome p{
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+
+  .imagen_redbull img{
+    padding-right: 0px;
+    margin: auto;
+  }
+}
+
+
+/*----MEDIA QUIERIS mobile-------*/
+
+@media (max-width: 425px){
+
+  header{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .banner{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .navegacion {
+    flex-direction: column;
+    padding: 0px;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .imagen_logo img{
+    margin: auto;
+  }
+
+.infohome p{
+    text-align: center;
+  }
+
+
+/*----pagina newslette-------*/
+  .formulario{
+    width: 90%;
+    margin: auto;
+  }
+
+  .redesnews{
+    width: 100%;
+    margin: auto;
+    padding-left: 0px;
+  }
+
+  .redes_uno a{
+    margin-right: 20px;
+  }
+
+
+
+}
+
